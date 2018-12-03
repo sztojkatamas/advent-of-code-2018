@@ -1,4 +1,8 @@
 # Advent of Code 2018
 
-Silly fun repository for the contest.
+Silly and fun repository for the contest.
 https://adventofcode.com/2018
+
+:)
+
+Happy coding!
