@@ -26,4 +26,13 @@ public class FabricClaim {
         this.width = width;
         this.heigth = height;
     }
+
+    public FabricClaim(String[] xxx)
+    {
+        this.id = xxx[0].trim();
+        this.x = Integer.parseInt(xxx[1].trim());
+        this.y = Integer.parseInt(xxx[2].trim());
+        this.width = Integer.parseInt(xxx[3].trim());
+        this.heigth = Integer.parseInt(xxx[4].trim());
+    }
 }

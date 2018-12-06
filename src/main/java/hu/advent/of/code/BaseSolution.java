@@ -20,7 +20,7 @@ public abstract class BaseSolution {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         try (Scanner scanner = new Scanner(bufferedReader)) {
             while (scanner.hasNext()) {
-                data.add(scanner.next());
+                data.add(scanner.nextLine());
             }
         }
     }

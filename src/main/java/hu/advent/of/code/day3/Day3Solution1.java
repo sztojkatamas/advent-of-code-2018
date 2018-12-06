@@ -17,10 +17,9 @@ public class Day3Solution1 extends BaseSolution {
     public void run() throws IOException {
         loadDataFromFile("input3.txt");
 
-        for (int i = 0; i < data.size(); i = i +4) {
-            String[] pos = data.get(i+2).split(",|:");
-            String[] size = data.get(i+3).split("x");
-            FabricClaim claim = new FabricClaim(data.get(i), Integer.parseInt(pos[0]), Integer.parseInt(pos[1]), Integer.parseInt(size[0]), Integer.parseInt(size[1]));
+        for (int i = 0; i < data.size(); i++) {
+            String[] xxx = data.get(i).split(",|:|x|@");
+            FabricClaim claim = new FabricClaim(xxx);
             claims.add(claim);
         }
         claims.forEach(this::putClaimOnCloth);
